@@ -1,0 +1,92 @@
+/* Background Animation */
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* กล่องสมัครสมาชิก */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.register-box {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* หัวข้อ */
+h2 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+/* ช่องกรอกข้อมูล */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+/* ปุ่มสมัคร */
+.register-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-button:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* ข้อความแจ้งเตือน error */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* ลิงก์เข้าสู่ระบบ */
+.login-link {
+  margin-top: 15px;
+  color: #fff;
+}
+
+.login-link a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
